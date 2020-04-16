@@ -9,15 +9,18 @@ function alternatingSums(a: number[]): number[] {
             teamTwo.push(a[i]);
         }
     }
-    return addWeights(teamOne).concat(addWeights(teamTwo));
+
+    const weights: number[] = [addWeights(teamOne), addWeights(teamTwo)];
+    
+    return weights;
 }
 
-function addWeights(team: number[]): number[] {
-    const addedWeights = team.reduce((accum,currentValue) => {
+function addWeights(team: number[]): number {
+    const addedWeights: number = team.reduce((accum,currentValue) => {
         return accum + currentValue;
     })
 
-    return [addedWeights];
+    return addedWeights;
 }
 
 console.log(alternatingSums([50, 60, 60, 45, 70]))
