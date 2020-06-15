@@ -7,4 +7,4 @@ function allLongestStrings(inputArray: string[]): string[] {
     return inputArray.filter((word: string): boolean => word.length === stringLength);
 }
 
-console.log(allLongestStrings(["aba", "aa", "ad", "vcd", "aba"]));
+// console.log(allLongestStrings(["aba", "aa", "ad", "vcd", "aba"]));

@@ -8,4 +8,4 @@ function adjacentElementsProduct(inputArray: number[]): number {
     return largestProduct;
 }
 
- console.log(adjacentElementsProduct([1, 6, 1, 1, 7, 3]));
+//  console.log(adjacentElementsProduct([1, 6, 1, 1, 7, 3]));

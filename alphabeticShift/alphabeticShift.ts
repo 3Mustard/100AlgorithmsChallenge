@@ -12,4 +12,4 @@ function alphabeticShift(inputString: string): string {
     }).join("");
 }
 
-console.log(alphabeticShift('crazy'));
+// console.log(alphabeticShift('crazy'));

@@ -1,6 +1,6 @@
 function alternatingSums(a: number[]): number[] {
-    let teamOne: number[] = [];
-    let teamTwo: number[] = [];
+    const teamOne: number[] = [];
+    const teamTwo: number[] = [];
 
     for (let i = 0; i < a.length; i++) {
         if (i % 2 === 0) {
@@ -11,7 +11,7 @@ function alternatingSums(a: number[]): number[] {
     }
 
     const weights: number[] = [addWeights(teamOne), addWeights(teamTwo)];
-    
+
     return weights;
 }
 
@@ -23,4 +23,4 @@ function addWeights(team: number[]): number {
     return addedWeights;
 }
 
-console.log(alternatingSums([50, 60, 60, 45, 70]))
+// console.log(alternatingSums([50, 60, 60, 45, 70]))
